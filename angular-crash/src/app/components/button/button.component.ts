@@ -18,7 +18,7 @@ export class ButtonComponent implements OnInit {
   }
 
   onClick():void{
-    this.counter += 1
+    // this.counter += 1
     this.btnClick.emit();
   }
 
