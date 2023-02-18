@@ -1,0 +1,5 @@
+<div class="calendar-container">
+    <h4>Current Date : {{selectedDate.toLocaleDateString()}}</h4>
+    <mat-calendar [(selected)]="selectedDate"></mat-calendar>
+    <a [routerLink]="['/tasks', {date: selectedDate}]">Tasks</a>
+</div>
