@@ -7,8 +7,9 @@ import { ActivatedRoute, Route } from '@angular/router';
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css']
 })
-export default class TaskListComponent implements OnInit {
 
+export default class TaskListComponent implements OnInit {
+  
   constructor(private _route: ActivatedRoute) { }
   ngOnInit(): void {
     let selectedDate:Date = new Date(this._route.snapshot.params['date']);
